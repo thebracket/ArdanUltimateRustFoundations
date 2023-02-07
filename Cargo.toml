@@ -23,4 +23,6 @@ members = [
     "src/auth_enum_exe3", # For `day1/hour2/enums.md`
     "src/auth_enum_fn", # For `day1/hour2/enums.md`
     "src/auth_enum_fn_exe", # For `day1/hour2/enums.md`
+    "src/auth_struct", # For `day1/hour2/structs.md`
+    "src/auth_struct_exe", # For `day1/hour2/structs.md`
 ]

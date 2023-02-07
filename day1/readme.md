@@ -16,36 +16,8 @@
 
 * [Enumerations](./hour2/enums.md)
 * [Structures](./hour2/structs.md)
-
-* Hour Intro
-    * Introducing enums & Options
-        * Create an enum named Action
-        * If a user is recognized, return Some(action).
-        * If a user is not recognized, return None
-        * Match on enum - Eq and PartialEq
-        * Enums can contain data!
-            * Add a note field to an entry
-            * Enums are like unions in other language: they are as large as the largest entry.
-        * Match on an enum with fields
-        * Maybe you prefer a more object-like syntax
-            * You can implement code on enums.
-            * Build a function that matches on self to perform differently
-    * Introducing structures
-        * Build a "User" structure, containing the name, password and action.
-            * Side track into string types.
-                * &str - for constant strings.
-                * `String` for strings that might change.
-        * Implement a function on the structure to check username and password, and return Option<Action>. Implement the password check.
-    * Introduce arrays & iterators
-        * Make a static array of users.
-        * Write a simple "for" loop that checks each record.
-            * Notice how Clippy complained?
-        * First try: we'll use `enumerate` to get the index and do a `for user in users.iter()`.
-        * Second try: we'll use `.iter().find`.
-            * This introduces closures.
-        * Final: we'll use `any`.
-* Hour Wrap
-* Break
+* [Hour 2 Wrap](./hour2/hour_2_wrap.md)
+* **TIME FOR A BREAK**
 
 ## 3rd Hour
 

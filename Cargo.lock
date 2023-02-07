@@ -51,6 +51,17 @@ dependencies = [
 ]
 
 [[package]]
+name = "auth_struct"
+version = "0.1.0"
+
+[[package]]
+name = "auth_struct_exe"
+version = "0.1.0"
+dependencies = [
+ "auth_struct",
+]
+
+[[package]]
 name = "hello_as_a_service"
 version = "0.1.0"
 
