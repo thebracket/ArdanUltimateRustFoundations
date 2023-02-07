@@ -3,6 +3,43 @@
 version = 3
 
 [[package]]
+name = "auth_enum"
+version = "0.1.0"
+
+[[package]]
+name = "auth_enum2"
+version = "0.1.0"
+
+[[package]]
+name = "auth_enum3"
+version = "0.1.0"
+
+[[package]]
+name = "auth_enum_exe"
+version = "0.1.0"
+dependencies = [
+ "auth_enum",
+]
+
+[[package]]
+name = "auth_enum_exe3"
+version = "0.1.0"
+dependencies = [
+ "auth_enum3",
+]
+
+[[package]]
+name = "auth_enum_fn"
+version = "0.1.0"
+
+[[package]]
+name = "auth_enum_fn_exe"
+version = "0.1.0"
+dependencies = [
+ "auth_enum_fn",
+]
+
+[[package]]
 name = "auth_if"
 version = "0.1.0"
 

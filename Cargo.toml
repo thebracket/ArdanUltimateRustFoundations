@@ -7,10 +7,20 @@ edition = "2021"
 
 [workspace]
 members = [
-    "src/hello_login_system", # For `day1/hello_world.md`
-    "src/hello_auth", # For `day1/hello_library.md`
-    "src/hello_as_a_service", # For `day1/hello_library.md`
-    "src/hello_service_exe", # For `day1/hello_library.md`
-    "src/auth_if", # For `day1/simple_login_test.md`
-    "src/auth_if_exe", # For `day1/simple_login_test.md`
+    # Day 1, Hour 1
+    "src/hello_login_system", # For `day1/hour1/hello_world.md`
+    "src/hello_auth", # For `day1/hour1/hello_library.md`
+    "src/hello_as_a_service", # For `day1/hour1/hello_library.md`
+    "src/hello_service_exe", # For `day1/hour1/hello_library.md`
+    "src/auth_if", # For `day1/hour1/simple_login_test.md`
+    "src/auth_if_exe", # For `day1/hour1/simple_login_test.md`
+
+    # Day 1, Hour 2
+    "src/auth_enum", # For `day1/hour2/enums.md`
+    "src/auth_enum_exe", # For `day1/hour2/enums.md`
+    "src/auth_enum2", # For `day1/hour2/enums.md`
+    "src/auth_enum3", # For `day1/hour2/enums.md`
+    "src/auth_enum_exe3", # For `day1/hour2/enums.md`
+    "src/auth_enum_fn", # For `day1/hour2/enums.md`
+    "src/auth_enum_fn_exe", # For `day1/hour2/enums.md`
 ]

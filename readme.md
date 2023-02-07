@@ -7,15 +7,15 @@ of each hour.
 
 | **[Day 1](./day1/readme.md)**                        | **Day 2**                         | **Day 3**                     | **Day 4**         |
 |------------------------------------------------------|-----------------------------------|-------------------------------|-------------------|
-| [Introduction](./day1/class_intro.md#class-overview)            |
-| [Setup & Update Rust](./day1/setup_rust.md)                     | Handling Errors                   | New Types and Wrapping Data   | Simple Benchmarks |
-| [Visual Studio Code](./day1/setup_ide.md)                       | `thiserror`                       | Traits: `From`/`Into`         | Feature Flags     |
-| [cargo init and "Hello World"](./day1/hello_world.md)           | `anyhow`                          | Dynamic Traits and Pseudo-OOP | Macros            |
-| [Cargo Workspaces](./day1/workspaces.md)                        | Single-Threaded Borrow Checker    | Combining Traits              | Safety Guarantees |
-| [Hello Library](./day1/hello_library.md)                        | Lifetimes                         | Casting with `any`            |                   |
-| [Text Input & Better Unit Testing](./day1/simple_login_test.md) | RAII - Drop Cleanup               | Generic Functions             |                   |
-| Enums & Options                            | Fearless Concurrency              | Generic Data Types            |                   |
-| Structures                                 | Rust Saves the Day                |                               |                   |
+| [Introduction](./day1/hour1/class_intro.md#class-overview)            |
+| [Setup & Update Rust](./day1/hour1/setup_rust.md)                     | Handling Errors                   | New Types and Wrapping Data   | Simple Benchmarks |
+| [Visual Studio Code](./day1/hour1/setup_ide.md)                       | `thiserror`                       | Traits: `From`/`Into`         | Feature Flags     |
+| [cargo init and "Hello World"](./day1/hour1/hello_world.md)           | `anyhow`                          | Dynamic Traits and Pseudo-OOP | Macros            |
+| [Cargo Workspaces](./day1/hour1/workspaces.md)                        | Single-Threaded Borrow Checker    | Combining Traits              | Safety Guarantees |
+| [Hello Library](./day1/hour1/hello_library.md)                        | Lifetimes                         | Casting with `any`            |                   |
+| [Text Input & Better Unit Testing](./day1/hour1/simple_login_test.md) | RAII - Drop Cleanup               | Generic Functions             |                   |
+| [Enumerations/Unions](./day1/hour2/enums.md)                          | Fearless Concurrency              | Generic Data Types            |                   |
+| [Structures](./day1/hour2/structs.md)                                 | Rust Saves the Day                |                               |                   |
 | Arrays & Iterators                         | Thread-shared Atomics             |                               |                   |
 | Vectors                                    | Using `rayon` for easy threading  |                               |                   |
 | HashMaps                                   | TCP Server with Tokio             |                               |                   |
