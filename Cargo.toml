@@ -1,0 +1,16 @@
+[package]
+name = "top_level"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+[workspace]
+members = [
+    "src/hello_login_system", # For `day1/hello_world.md`
+    "src/hello_auth", # For `day1/hello_library.md`
+    "src/hello_as_a_service", # For `day1/hello_library.md`
+    "src/hello_service_exe", # For `day1/hello_library.md`
+    "src/auth_if", # For `day1/simple_login_test.md`
+    "src/auth_if_exe", # For `day1/simple_login_test.md`
+]
