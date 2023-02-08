@@ -21,7 +21,7 @@ of each hour.
 | [HashMaps](./day1/hour3/hashmaps.md)                                  | TCP Server with Tokio             |                               |                   |
 | [Serialization](./day1/hour3/serialization.md)                        | Green Threads and Blocking        |                               |                   |
 | [Hashing Passwords](./day1/hour3/hashing.md)                          | Sending Receiving data - Channels |                               |                   |
-| A CLI Application             |                                   |                               |                   |
+| [A CLI Application](./day1/hour4/cli.md)                              |                                   |                               |                   |
 
 
 ## Day 2: Fearless Concurrency

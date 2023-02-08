@@ -25,23 +25,11 @@
 * [HashMaps](./hour3/hashmaps.md)
 * [Serialization/Deserialization](./hour3/serialization.md)
 * [Hashing Passwords](./hour3/hashing.md)
+* [Hour 3 Wrap](./hour3/hour_3_wrap.md)
 * **TIME FOR A BREAK**
 
 ## 4th Hour
 
-* Hour Intro
-* Let's make an interactive user manager CLI application.
-    * Load the user list.
-    * Collect it into a vector.
-    * Sort it.
-    * Print users to a list
-        * But wait, there's more users than we can fit!
-        * Introduce paging with slices to display parts of the list.
-    * Add an option to delete a user.
-    * Add an option to edit a user.
-    * Add an option to add a user.
-* What if you prefer a CLI command-based app?
-    * Introducing `clap` - command line handler.
-    * Build a simple user manager with CLI options.
-* Hour Wrap
-* Break
+* [Build a Command Line User Manager](./hour4/cli.md)
+* [Day Wrap](./day_1_wrap.md)
+* **SEE YOU TOMORROW**
