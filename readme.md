@@ -16,15 +16,12 @@ of each hour.
 | [Text Input & Better Unit Testing](./day1/hour1/simple_login_test.md) | RAII - Drop Cleanup               | Generic Functions             |                   |
 | [Enumerations/Unions](./day1/hour2/enums.md)                          | Fearless Concurrency              | Generic Data Types            |                   |
 | [Structures](./day1/hour2/structs.md)                                 | Rust Saves the Day                |                               |                   |
-| Arrays & Iterators                         | Thread-shared Atomics             |                               |                   |
-| Vectors                                    | Using `rayon` for easy threading  |                               |                   |
-| HashMaps                                   | TCP Server with Tokio             |                               |                   |
-| Dependencies                               | Green Threads and Blocking        |                               |                   |
-| Serialization                              | Sending Receiving data - Channels |                               |                   |
-| Salted Hashes & Password                   |                                   |                               |                   |
-| Serialization to Other Formats             |                                   |                               |                   |
-| User Manager CLI Application               |                                   |                               |                   |
-| Clap for CLI Options                       |                                   |                               |                   |
+| [Arrays & Iterators](./day1/hour2/structs.md)                         | Thread-shared Atomics             |                               |                   |
+| [Vectors](./day1/hour3/vectors.md)                                    | Using `rayon` for easy threading  |                               |                   |
+| [HashMaps](./day1/hour3/hashmaps.md)                                  | TCP Server with Tokio             |                               |                   |
+| [Serialization](./day1/hour3/serialization.md)                        | Green Threads and Blocking        |                               |                   |
+| [Hashing Passwords](./day1/hour3/hashing.md)                          | Sending Receiving data - Channels |                               |                   |
+| A CLI Application             |                                   |                               |                   |
 
 
 ## Day 2: Fearless Concurrency

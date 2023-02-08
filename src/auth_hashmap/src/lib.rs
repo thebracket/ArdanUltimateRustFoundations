@@ -1,3 +1,6 @@
+use std::collections::HashMap;
+
+#[derive(Clone, Debug)]
 pub struct User {
     pub username: String,
     pub password: String,
@@ -14,20 +17,33 @@ impl User {
     }
 }
 
-pub fn get_users() -> [User; 3] {
-    [
+pub fn get_users() -> HashMap<String, User> {
+    /*let mut result = HashMap::new();
+    result.insert("herbert".to_string(), User::new("herbert", "password", LoginAction::Accept(Role::Admin)));
+    result*/
+    let mut users = vec![
         User::new("herbert", "password", LoginAction::Accept(Role::Admin)),
         User::new("bob", "password", LoginAction::Accept(Role::User)),
         User::new("fred", "password", LoginAction::Denied(DeniedReason::PasswordExpired)),
-    ]
+    ];
+    /*users
+        .iter() // Create an iterator
+        .map(|user| (user.username.clone(), user.clone()) )
+        .collect()*/
+    users
+        .drain(0..)
+        .map(|user| ( user.username.clone(), user ))
+        .collect()
 }
 
-pub fn login(users: &[User], username: &str, password: &str) -> Option<LoginAction> {
+pub fn login(users: &HashMap<String, User>, username: &str, password: &str) -> Option<LoginAction> {
     let username = username.trim().to_lowercase();
     let password = password.trim();
+
     users
-        .iter()
-        .find(|u| u.username == username && u.password == password).map(|user| user.action.clone())
+        .get(&username)
+        .filter(|user| user.password == password)
+        .map(|user| user.action.clone())
 }
 
 #[derive(PartialEq, Debug, Clone)]

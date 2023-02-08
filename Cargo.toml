@@ -25,4 +25,14 @@ members = [
     "src/auth_enum_fn_exe", # For `day1/hour2/enums.md`
     "src/auth_struct", # For `day1/hour2/structs.md`
     "src/auth_struct_exe", # For `day1/hour2/structs.md`
+
+    # Day 1, Hour 3
+    "src/auth_vec", # For `day1/hour3/vectors.md`
+    "src/auth_vec_exe", # For `day1/hour3/vectors.md`
+    "src/auth_hashmap", # For `day1/hour3/hashmaps.md`
+    "src/auth_hashmap_exe", # For `day1/hour3/hashmaps.md`
+    "src/auth_json", # For `day1/hour3/serialization.md`
+    "src/auth_json_exe", # For `day1/hour3/serialization.md`
+    "src/auth_passwords", # For `day1/hour3/hashing.md`
+    "src/auth_passwords_exe", # For `day1/hour3/hashing.md`
 ]

@@ -14,8 +14,8 @@ impl User {
     }
 }
 
-pub fn get_users() -> [User; 3] {
-    [
+pub fn get_users() -> Vec<User> {
+    vec![
         User::new("herbert", "password", LoginAction::Accept(Role::Admin)),
         User::new("bob", "password", LoginAction::Accept(Role::User)),
         User::new("fred", "password", LoginAction::Denied(DeniedReason::PasswordExpired)),
