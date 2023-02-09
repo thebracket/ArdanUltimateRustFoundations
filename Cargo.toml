@@ -39,4 +39,9 @@ members = [
     # Day 1, Hour 4
     "src/userman",  # For `day1/hour4/cli.md`
     "src/auth_userman", # For `day1/hour4/cli.md`
+
+    # Day 2, Hour 1
+    "src/modules1", # For `day2/hour1/modules.md`
+    "src/modules1_exe", # For `day2/hour1/modules.md`
+    "src/modules2", # For `day2/hour1/modules.md`
 ]

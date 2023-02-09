@@ -5,86 +5,24 @@ of each hour.
 
 ## Class Overview
 
-| **[Day 1](./day1/readme.md)**                        | **Day 2**                         | **Day 3**                     | **Day 4**         |
-|------------------------------------------------------|-----------------------------------|-------------------------------|-------------------|
-| [Introduction](./day1/hour1/class_intro.md#class-overview)            |
-| [Setup & Update Rust](./day1/hour1/setup_rust.md)                     | Handling Errors                   | New Types and Wrapping Data   | Simple Benchmarks |
-| [Visual Studio Code](./day1/hour1/setup_ide.md)                       | `thiserror`                       | Traits: `From`/`Into`         | Feature Flags     |
-| [cargo init and "Hello World"](./day1/hour1/hello_world.md)           | `anyhow`                          | Dynamic Traits and Pseudo-OOP | Macros            |
-| [Cargo Workspaces](./day1/hour1/workspaces.md)                        | Single-Threaded Borrow Checker    | Combining Traits              | Safety Guarantees |
-| [Hello Library](./day1/hour1/hello_library.md)                        | Lifetimes                         | Casting with `any`            |                   |
-| [Text Input & Better Unit Testing](./day1/hour1/simple_login_test.md) | RAII - Drop Cleanup               | Generic Functions             |                   |
-| [Enumerations/Unions](./day1/hour2/enums.md)                          | Fearless Concurrency              | Generic Data Types            |                   |
-| [Structures](./day1/hour2/structs.md)                                 | Rust Saves the Day                |                               |                   |
-| [Arrays & Iterators](./day1/hour2/structs.md)                         | Thread-shared Atomics             |                               |                   |
-| [Vectors](./day1/hour3/vectors.md)                                    | Using `rayon` for easy threading  |                               |                   |
-| [HashMaps](./day1/hour3/hashmaps.md)                                  | TCP Server with Tokio             |                               |                   |
-| [Serialization](./day1/hour3/serialization.md)                        | Green Threads and Blocking        |                               |                   |
-| [Hashing Passwords](./day1/hour3/hashing.md)                          | Sending Receiving data - Channels |                               |                   |
-| [A CLI Application](./day1/hour4/cli.md)                              |                                   |                               |                   |
+| **[Day 1](./day1/readme.md)**                                         | **[Day 2](./day2/readme.md)**                         | **Day 3**                     | **Day 4**         |
+|-----------------------------------------------------------------------|-------------------------------------------------------|-------------------------------|-------------------|
+| [Introduction](./day1/hour1/class_intro.md#class-overview)            | [Modules & Visibility](./day2/hour1/modules.md)       |
+| [Setup & Update Rust](./day1/hour1/setup_rust.md)                     | [Documentation](./day2/hour1/documentation.md)        | New Types and Wrapping Data   | Simple Benchmarks |
+| [Visual Studio Code](./day1/hour1/setup_ide.md)                       | `thiserror`                                           | Traits: `From`/`Into`         | Feature Flags     |
+| [cargo init and "Hello World"](./day1/hour1/hello_world.md)           | `anyhow`                                              | Dynamic Traits and Pseudo-OOP | Macros            |
+| [Cargo Workspaces](./day1/hour1/workspaces.md)                        | Single-Threaded Borrow Checker                        | Combining Traits              | Safety Guarantees |
+| [Hello Library](./day1/hour1/hello_library.md)                        | Lifetimes                                             | Casting with `any`            |                   |
+| [Text Input & Better Unit Testing](./day1/hour1/simple_login_test.md) | RAII - Drop Cleanup                                   | Generic Functions             |                   |
+| [Enumerations/Unions](./day1/hour2/enums.md)                          | Fearless Concurrency                                  | Generic Data Types            |                   |
+| [Structures](./day1/hour2/structs.md)                                 | Rust Saves the Day                                    |                               |                   |
+| [Arrays & Iterators](./day1/hour2/structs.md)                         | Thread-shared Atomics                                 |                               |                   |
+| [Vectors](./day1/hour3/vectors.md)                                    | Using `rayon` for easy threading                      |                               |                   |
+| [HashMaps](./day1/hour3/hashmaps.md)                                  | TCP Server with Tokio                                 |                               |                   |
+| [Serialization](./day1/hour3/serialization.md)                        | Green Threads and Blocking                            |                               |                   |
+| [Hashing Passwords](./day1/hour3/hashing.md)                          | Sending Receiving data - Channels                     |                               |                   |
+| [A CLI Application](./day1/hour4/cli.md)                              |                                                       |                               |                   |
 
-
-## Day 2: Fearless Concurrency
-
-### Hour 1 
-
-* Day Intro
-* Hour Intro
-* Dealing with Errors
-    * Using `thiserror` to be really specific.
-    * Using `anyhow` for easy client-side handling.
-    * Errors are not exceptions.
-* The Borrow Checker - Single Threaded
-    * The borrow checker rules
-        * You can borrow something immutably as often as you like.
-        * You can only borrow something that can change once - and not if anyone is looking at it.
-    * How does this help?
-    * No use after move.
-    * The Borrow Checker Cycle for C programmers
-    * Lifetimes
-* Guaranteed Cleanup with Drop
-* Hour Wrap
-* Break
-
-### Hour 2
-
-* Hour Intro
-* Let's create a really inefficient prime number checker, and count primes.
-    * And of course, unit test it.
-* Take a quick look at the C++ example of how this can go horribly wrong.
-* Let's divide the workload with vector "chunks".
-* Now, let's read each "chunk" in a thread.
-    * Rust's borrow checker and data race protection makes it impossible to unsafely share the counter!
-    * So let's use an `AtomicUsize` with ordering to safely increment as the threads go by.
-    * It's a lot faster.
-* Hour Wrap
-* Break
-
-### Hour 3
-
-* Hour Intro
-* Let's rewrite the checker to use iterators.
-    * Much shorter.
-    * Iterators are often the preferred way to interact with data.
-* Now let's add `rayon` and use `par_iter`.
-    * We just turned the whole program into a parallel system that uses all of our CPU cores - with 1 line of code.
-* Rayon is great for CPU bound applications.
-* Not every problem is CPU bound. Sometimes, async is a better choice.
-    * `Tokio` simple async TCP echo server.
-    * Connect Tokio loop to read to end, deserialize the request and return a serialized result. Use the login example again.
-* Hour Wrap
-* Break
-
-### Hour 4
-
-* Hour Intro
-* What if you have mostly I/O bound issues, but some CPU bound issues, too?
-    * The Tokio sleep example
-    * Introducing `spawn_blocking`.
-    * Running Rayon and Tokio at once. Prime numbers as a service.
-* Communicating with channels
-* Hour Wrap
-* Break
 
 ## Day 3
 
