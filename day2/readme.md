@@ -11,6 +11,7 @@
 ### Hour 2
 
 * [The Borrow Checker](./hour2/borrow_checker.md)
+* [Lifetimes](./hour2/lifetimes.md)
 
 * Day Intro
 * Hour Intro

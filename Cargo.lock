@@ -156,6 +156,30 @@ dependencies = [
 ]
 
 [[package]]
+name = "borrow_iter"
+version = "0.1.0"
+
+[[package]]
+name = "borrow_move1"
+version = "0.1.0"
+
+[[package]]
+name = "borrow_move2"
+version = "0.1.0"
+
+[[package]]
+name = "borrow_move3"
+version = "0.1.0"
+
+[[package]]
+name = "borrow_move4"
+version = "0.1.0"
+
+[[package]]
+name = "borrow_move5"
+version = "0.1.0"
+
+[[package]]
 name = "cc"
 version = "1.0.79"
 source = "registry+https://github.com/rust-lang/crates.io-index"

@@ -49,4 +49,10 @@ members = [
     "src/errors1", # For `day2/hour1/errors.md`
     "src/errors2", # For `day2/hour1/errors.md`
     "src/errors3", # For `day2/hour1/errors.md`
+    "src/borrow_move1", # For `day2/hour2/borrow_checker.md`
+    "src/borrow_move2", # For `day2/hour2/borrow_checker.md`
+    "src/borrow_move3", # For `day2/hour2/borrow_checker.md`
+    "src/borrow_move4", # For `day2/hour2/borrow_checker.md`
+    "src/borrow_move5", # For `day2/hour2/borrow_checker.md`
+    "src/borrow_iter",  # For `day2/hour2/borrow_checker.md`
 ]
