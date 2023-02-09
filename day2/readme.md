@@ -5,6 +5,12 @@
 * Day Intro
 * [Modules & Visibility](./hour1/modules.md)
 * [Documentation](./hour1/documentation.md)
+* [Error Handling](./hour1/errors.md)
+* **TIME FOR A BREAK**
+
+### Hour 2
+
+* [The Borrow Checker](./hour2/borrow_checker.md)
 
 * Day Intro
 * Hour Intro

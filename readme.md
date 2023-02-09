@@ -9,8 +9,8 @@ of each hour.
 |-----------------------------------------------------------------------|-------------------------------------------------------|-------------------------------|-------------------|
 | [Introduction](./day1/hour1/class_intro.md#class-overview)            | [Modules & Visibility](./day2/hour1/modules.md)       |
 | [Setup & Update Rust](./day1/hour1/setup_rust.md)                     | [Documentation](./day2/hour1/documentation.md)        | New Types and Wrapping Data   | Simple Benchmarks |
-| [Visual Studio Code](./day1/hour1/setup_ide.md)                       | `thiserror`                                           | Traits: `From`/`Into`         | Feature Flags     |
-| [cargo init and "Hello World"](./day1/hour1/hello_world.md)           | `anyhow`                                              | Dynamic Traits and Pseudo-OOP | Macros            |
+| [Visual Studio Code](./day1/hour1/setup_ide.md)                       | [Error Handling](./day2/hour1/errors.md)              | Traits: `From`/`Into`         | Feature Flags     |
+| [cargo init and "Hello World"](./day1/hour1/hello_world.md)           | [The Borrow Checker](./day2/hour2/borrow_checker.md)  | Dynamic Traits and Pseudo-OOP | Macros            |
 | [Cargo Workspaces](./day1/hour1/workspaces.md)                        | Single-Threaded Borrow Checker                        | Combining Traits              | Safety Guarantees |
 | [Hello Library](./day1/hour1/hello_library.md)                        | Lifetimes                                             | Casting with `any`            |                   |
 | [Text Input & Better Unit Testing](./day1/hour1/simple_login_test.md) | RAII - Drop Cleanup                                   | Generic Functions             |                   |

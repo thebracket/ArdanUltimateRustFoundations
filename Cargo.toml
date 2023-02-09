@@ -46,4 +46,7 @@ members = [
     "src/modules2", # For `day2/hour1/modules.md`
     "src/docs", # For `day2/hour1/documentation.md`
     "src/docs_exe", # For `day2/hour1/documentation.md`
+    "src/errors1", # For `day2/hour1/errors.md`
+    "src/errors2", # For `day2/hour1/errors.md`
+    "src/errors3", # For `day2/hour1/errors.md`
 ]
