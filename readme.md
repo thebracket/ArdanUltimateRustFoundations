@@ -19,7 +19,7 @@ of each hour.
 | [Arrays & Iterators](./day1/hour2/structs.md)                         | [Easy Concurrency with Rayon](./day2/hour3/rayon.md)  |                               |                   |
 | [Vectors](./day1/hour3/vectors.md)                                    | [Async with Tokio](./day2/hour4/tokio.md)             |                               |                   |
 | [HashMaps](./day1/hour3/hashmaps.md)                                  | [TCP Server with Tokio](./day2/hour4/tcp_server.md)   |                               |                   |
-| [Serialization](./day1/hour3/serialization.md)                        | Sending Receiving data - Channels                     |                               |                   |
+| [Serialization](./day1/hour3/serialization.md)                        | [Sending Receiving data - Channels](./day2/hour4/channels.md) |                       |                   |
 | [Hashing Passwords](./day1/hour3/hashing.md)                          |                                                       |                               |                   |
 | [A CLI Application](./day1/hour4/cli.md)                              |                                                       |                               |                   |
 

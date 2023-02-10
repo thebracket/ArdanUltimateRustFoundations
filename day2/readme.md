@@ -28,31 +28,5 @@
 
 * [Tokio and Async](./hour4/tokio.md)
 * [TCP Networking with Tokio](./hour4/tcp_server.md)
-* Channels
+* [Channels](./hour4/channels.md)
 * Day Wrap
-
-### Hour 3
-
-* Hour Intro
-* Let's rewrite the checker to use iterators.
-    * Much shorter.
-    * Iterators are often the preferred way to interact with data.
-* Now let's add `rayon` and use `par_iter`.
-    * We just turned the whole program into a parallel system that uses all of our CPU cores - with 1 line of code.
-* Rayon is great for CPU bound applications.
-* Not every problem is CPU bound. Sometimes, async is a better choice.
-    * `Tokio` simple async TCP echo server.
-    * Connect Tokio loop to read to end, deserialize the request and return a serialized result. Use the login example again.
-* Hour Wrap
-* Break
-
-### Hour 4
-
-* Hour Intro
-* What if you have mostly I/O bound issues, but some CPU bound issues, too?
-    * The Tokio sleep example
-    * Introducing `spawn_blocking`.
-    * Running Rayon and Tokio at once. Prime numbers as a service.
-* Communicating with channels
-* Hour Wrap
-* Break

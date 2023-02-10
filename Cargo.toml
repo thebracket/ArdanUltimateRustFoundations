@@ -71,6 +71,10 @@ members = [
     "src/rayon_threads", # For `day2/hour3/rayon.md"
 
     # Day 2, Hour 4
-    "src/hello_tokio", # For `day2/hour4/hello_tokio"
-    
+    "src/hello_tokio", # For `day2/hour4/hello_tokio.md"
+    "src/tokio_tcp", # For `day2/hour4/tcp_server.md"
+    "src/tokio_rpc", # For `day2/hour4/tcp_server.md"
+    "src/tokio_channels", # For `day2/hour4/channels.md"
+    "src/tokio_channels2", # For `day2/hour4/channels.md"
+    "src/thread_channels", # For `day2/hour4/channels.md"
 ]
