@@ -6,12 +6,17 @@
 * [Modules & Visibility](./hour1/modules.md)
 * [Documentation](./hour1/documentation.md)
 * [Error Handling](./hour1/errors.md)
+* Hour wrap
 * **TIME FOR A BREAK**
 
 ### Hour 2
 
 * [The Borrow Checker](./hour2/borrow_checker.md)
 * [Lifetimes](./hour2/lifetimes.md)
+* [Resource Acquisition is Initialization](raii.md)
+* Hour Wrap
+
+### Hour 3
 
 * Day Intro
 * Hour Intro

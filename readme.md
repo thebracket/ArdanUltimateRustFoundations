@@ -12,7 +12,7 @@ of each hour.
 | [Visual Studio Code](./day1/hour1/setup_ide.md)                       | [Error Handling](./day2/hour1/errors.md)              | Traits: `From`/`Into`         | Feature Flags     |
 | [cargo init and "Hello World"](./day1/hour1/hello_world.md)           | [The Borrow Checker](./day2/hour2/borrow_checker.md)  | Dynamic Traits and Pseudo-OOP | Macros            |
 | [Cargo Workspaces](./day1/hour1/workspaces.md)                        | [Lifetimes](./day2/hour2/lifetimes.md)                | Combining Traits              | Safety Guarantees |
-| [Hello Library](./day1/hour1/hello_library.md)                        | Lifetimes                                             | Casting with `any`            |                   |
+| [Hello Library](./day1/hour1/hello_library.md)                        | [RAII - Drop Cleanup](./day2/hour2/raii.md)           | Casting with `any`            |                   |
 | [Text Input & Better Unit Testing](./day1/hour1/simple_login_test.md) | RAII - Drop Cleanup                                   | Generic Functions             |                   |
 | [Enumerations/Unions](./day1/hour2/enums.md)                          | Fearless Concurrency                                  | Generic Data Types            |                   |
 | [Structures](./day1/hour2/structs.md)                                 | Rust Saves the Day                                    |                               |                   |
