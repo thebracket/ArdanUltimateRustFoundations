@@ -13,10 +13,10 @@ of each hour.
 | [cargo init and "Hello World"](./day1/hour1/hello_world.md)           | [The Borrow Checker](./day2/hour2/borrow_checker.md)  | Dynamic Traits and Pseudo-OOP | Macros            |
 | [Cargo Workspaces](./day1/hour1/workspaces.md)                        | [Lifetimes](./day2/hour2/lifetimes.md)                | Combining Traits              | Safety Guarantees |
 | [Hello Library](./day1/hour1/hello_library.md)                        | [RAII - Drop Cleanup](./day2/hour2/raii.md)           | Casting with `any`            |                   |
-| [Text Input & Better Unit Testing](./day1/hour1/simple_login_test.md) | RAII - Drop Cleanup                                   | Generic Functions             |                   |
-| [Enumerations/Unions](./day1/hour2/enums.md)                          | Fearless Concurrency                                  | Generic Data Types            |                   |
-| [Structures](./day1/hour2/structs.md)                                 | Rust Saves the Day                                    |                               |                   |
-| [Arrays & Iterators](./day1/hour2/structs.md)                         | Thread-shared Atomics                                 |                               |                   |
+| [Text Input & Better Unit Testing](./day1/hour1/simple_login_test.md) | [CPU Bound Workload](./day2/hour3/count_primes.md)    | Generic Functions             |                   |
+| [Enumerations/Unions](./day1/hour2/enums.md)                          | [Racing Data](./day2/hour3/data_race.md)              | Generic Data Types            |                   |
+| [Structures](./day1/hour2/structs.md)                                 | [Atomically Counting Primes](./day2/hour3/atomic.md)  |                               |                   |
+| [Arrays & Iterators](./day1/hour2/structs.md)                         | [Easy Concurrency with Rayon](./day2/hour3/rayon.md)  |                               |                   |
 | [Vectors](./day1/hour3/vectors.md)                                    | Using `rayon` for easy threading                      |                               |                   |
 | [HashMaps](./day1/hour3/hashmaps.md)                                  | TCP Server with Tokio                                 |                               |                   |
 | [Serialization](./day1/hour3/serialization.md)                        | Green Threads and Blocking                            |                               |                   |

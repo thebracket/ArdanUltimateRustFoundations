@@ -18,37 +18,12 @@
 
 ### Hour 3
 
-* Day Intro
-* Hour Intro
-* Dealing with Errors
-    * Using `thiserror` to be really specific.
-    * Using `anyhow` for easy client-side handling.
-    * Errors are not exceptions.
-* The Borrow Checker - Single Threaded
-    * The borrow checker rules
-        * You can borrow something immutably as often as you like.
-        * You can only borrow something that can change once - and not if anyone is looking at it.
-    * How does this help?
-    * No use after move.
-    * The Borrow Checker Cycle for C programmers
-    * Lifetimes
-* Guaranteed Cleanup with Drop
+* [Really Inefficiently Counting Prime Numbers](./hour3/count_primes.md)
+* [Data Race Time](./hour3/data_race.md)
+* [Atomically Counting Primes](./hour3/atomic.md)
+* [Easy Parallelism with Rayon](./hour3/rayon.md)
 * Hour Wrap
-* Break
 
-### Hour 2
-
-* Hour Intro
-* Let's create a really inefficient prime number checker, and count primes.
-    * And of course, unit test it.
-* Take a quick look at the C++ example of how this can go horribly wrong.
-* Let's divide the workload with vector "chunks".
-* Now, let's read each "chunk" in a thread.
-    * Rust's borrow checker and data race protection makes it impossible to unsafely share the counter!
-    * So let's use an `AtomicUsize` with ordering to safely increment as the threads go by.
-    * It's a lot faster.
-* Hour Wrap
-* Break
 
 ### Hour 3
 

@@ -49,6 +49,8 @@ members = [
     "src/errors1", # For `day2/hour1/errors.md`
     "src/errors2", # For `day2/hour1/errors.md`
     "src/errors3", # For `day2/hour1/errors.md`
+
+    # Day 2, Hour 2
     "src/borrow_move1", # For `day2/hour2/borrow_checker.md`
     "src/borrow_move2", # For `day2/hour2/borrow_checker.md`
     "src/borrow_move3", # For `day2/hour2/borrow_checker.md`
@@ -58,4 +60,12 @@ members = [
     "src/lifetime_func", # For `day2/hour2/lifetimes.md`
     "src/rc_bench", # For `day2/hour2/lifetimes.md`
     "src/file_lock", # For `day2/hour2/raii.md`
+
+    # Day 3, Hour 3
+    "src/count_primes", # For `day2/hour3/count_primes.md`
+    "src/count_primes_bad", # For `day2/hour3/count_primes.md"
+    "src/count_primes_atomic", # For `day2/hour3/atomic.md"
+    "src/count_primes_atomic_many", # For `day2/hour3/atomic.md"
+    "src/count_primes_rayon", # For `day2/hour3/rayon.md"
+    "src/count_primes_rayon2", # For `day2/hour3/rayon.md"
 ]

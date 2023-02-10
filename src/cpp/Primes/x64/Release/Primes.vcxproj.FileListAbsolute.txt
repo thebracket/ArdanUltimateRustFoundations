@@ -1,0 +1,1 @@
+C:\Users\Herbert\Documents\Ardan\Rust Foundations 4 Day\src\cpp\Primes\x64\Release\Primes.exe
