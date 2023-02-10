@@ -61,7 +61,7 @@ members = [
     "src/rc_bench", # For `day2/hour2/lifetimes.md`
     "src/file_lock", # For `day2/hour2/raii.md`
 
-    # Day 3, Hour 3
+    # Day 2, Hour 3
     "src/count_primes", # For `day2/hour3/count_primes.md`
     "src/count_primes_bad", # For `day2/hour3/count_primes.md"
     "src/count_primes_atomic", # For `day2/hour3/atomic.md"
@@ -69,4 +69,8 @@ members = [
     "src/count_primes_rayon", # For `day2/hour3/rayon.md"
     "src/count_primes_rayon2", # For `day2/hour3/rayon.md"
     "src/rayon_threads", # For `day2/hour3/rayon.md"
+
+    # Day 2, Hour 4
+    "src/hello_tokio", # For `day2/hour4/hello_tokio"
+    
 ]

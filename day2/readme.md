@@ -26,9 +26,8 @@
 
 ### Hour 4
 
-* Tokio and I/O bound tasks
-* Blocking Tasks
-* Rayon and Tokio Together?
+* [Tokio and Async](./hour4/tokio.md)
+* [TCP Networking with Tokio](./hour4/tcp_server.md)
 * Channels
 * Day Wrap
 

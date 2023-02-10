@@ -17,10 +17,10 @@ of each hour.
 | [Enumerations/Unions](./day1/hour2/enums.md)                          | [Racing Data](./day2/hour3/data_race.md)              | Generic Data Types            |                   |
 | [Structures](./day1/hour2/structs.md)                                 | [Atomically Counting Primes](./day2/hour3/atomic.md)  |                               |                   |
 | [Arrays & Iterators](./day1/hour2/structs.md)                         | [Easy Concurrency with Rayon](./day2/hour3/rayon.md)  |                               |                   |
-| [Vectors](./day1/hour3/vectors.md)                                    | [Async I/O with Tokio](./day2/hour4/tokio.md)         |                               |                   |
-| [HashMaps](./day1/hour3/hashmaps.md)                                  | TCP Server with Tokio                                 |                               |                   |
-| [Serialization](./day1/hour3/serialization.md)                        | Green Threads and Blocking                            |                               |                   |
-| [Hashing Passwords](./day1/hour3/hashing.md)                          | Sending Receiving data - Channels                     |                               |                   |
+| [Vectors](./day1/hour3/vectors.md)                                    | [Async with Tokio](./day2/hour4/tokio.md)             |                               |                   |
+| [HashMaps](./day1/hour3/hashmaps.md)                                  | [TCP Server with Tokio](./day2/hour4/tcp_server.md)   |                               |                   |
+| [Serialization](./day1/hour3/serialization.md)                        | Sending Receiving data - Channels                     |                               |                   |
+| [Hashing Passwords](./day1/hour3/hashing.md)                          |                                                       |                               |                   |
 | [A CLI Application](./day1/hour4/cli.md)                              |                                                       |                               |                   |
 
 
