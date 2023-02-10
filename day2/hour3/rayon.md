@@ -77,3 +77,52 @@ That was almost too easy. Rayon makes it very easy to build parallel versions of
 
 ## Rayon Can Manage Your Threads
 
+> We're live coding, the Github example is [here](/src/rayon_threads/)
+
+Rayon can manage your threads, but because it's *task oriented* it works a little differently. This won't work:
+
+```rust
+use std::{thread::sleep, time::Duration};
+use rayon::spawn;
+
+fn hello(n: u64) {
+    println!("Hello from thread {n}");
+    sleep(Duration::from_secs(n));
+    println!("Bye from thread {n}");
+}
+
+fn main() {
+    let mut threads = Vec::new();
+    for i in 0..8 {
+        let my_i = i;
+        threads.push(spawn(move || hello(my_i)));
+    }
+    for t in threads {
+        t.join();
+    }
+}
+```
+
+Instead, Rayon combines jobs inside a `scope` - and a scope waits until all child jobs have finished:
+
+```rust
+use std::{thread::sleep, time::Duration};
+
+fn hello(n: u64) {
+    println!("Hello from thread {n}");
+    sleep(Duration::from_secs(n));
+    println!("Bye from thread {n}");
+}
+
+fn main() {
+    rayon::scope(|s| {
+        for i in 0..8 {
+            let my_i = i;
+            s.spawn(move |_| hello(my_i));
+        }
+    });
+
+}
+```
+
+Between these constructs, Rayon is often the best choice for taming CPU bound problems. Best of all: all of the data-race safety still works in Rayon.

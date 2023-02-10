@@ -24,6 +24,13 @@
 * [Easy Parallelism with Rayon](./hour3/rayon.md)
 * Hour Wrap
 
+### Hour 4
+
+* Tokio and I/O bound tasks
+* Blocking Tasks
+* Rayon and Tokio Together?
+* Channels
+* Day Wrap
 
 ### Hour 3
 

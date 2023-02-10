@@ -68,4 +68,5 @@ members = [
     "src/count_primes_atomic_many", # For `day2/hour3/atomic.md"
     "src/count_primes_rayon", # For `day2/hour3/rayon.md"
     "src/count_primes_rayon2", # For `day2/hour3/rayon.md"
+    "src/rayon_threads", # For `day2/hour3/rayon.md"
 ]

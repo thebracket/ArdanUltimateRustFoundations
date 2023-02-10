@@ -642,6 +642,13 @@ dependencies = [
 ]
 
 [[package]]
+name = "rayon_threads"
+version = "0.1.0"
+dependencies = [
+ "rayon",
+]
+
+[[package]]
 name = "rc_bench"
 version = "0.1.0"
 
