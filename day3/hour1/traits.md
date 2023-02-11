@@ -421,3 +421,5 @@ for animal in animals.iter() {
 ```
 
 Despite being painful, this can be useful. If you have a polymorphic list, and need to access native behavior for a type---this is how you do it. There are crates that help.
+
+[Here's a link to the full solution on the Playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2021&gist=a5ca5b7768ea8c13c5d04a137a30bcad)
