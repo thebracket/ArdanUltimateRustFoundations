@@ -429,6 +429,17 @@ dependencies = [
 ]
 
 [[package]]
+name = "generic_data"
+version = "0.1.0"
+
+[[package]]
+name = "globals"
+version = "0.1.0"
+dependencies = [
+ "once_cell",
+]
+
+[[package]]
 name = "heck"
 version = "0.4.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"

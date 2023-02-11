@@ -5,16 +5,16 @@ of each hour.
 
 ## Class Overview
 
-| **[Day 1](./day1/readme.md)**                                         | **[Day 2](./day2/readme.md)**                         | **Day 3**                                             | **Day 4**         |
-|-----------------------------------------------------------------------|-------------------------------------------------------|-------------------------------------------------------|-------------------|
-| [Introduction](./day1/hour1/class_intro.md#class-overview)            | [Modules & Visibility](./day2/hour1/modules.md)       | [Type Safety with NewTypes](./day3/hour1/new_types.md)|                   |
-| [Setup & Update Rust](./day1/hour1/setup_rust.md)                     | [Documentation](./day2/hour1/documentation.md)        | [Basic Traits](./day3/hour1/traits.md)                | Simple Benchmarks |
-| [Visual Studio Code](./day1/hour1/setup_ide.md)                       | [Error Handling](./day2/hour1/errors.md)              | Traits: `From`/`Into`                                 | Feature Flags     |
-| [cargo init and "Hello World"](./day1/hour1/hello_world.md)           | [The Borrow Checker](./day2/hour2/borrow_checker.md)  | Dynamic Traits and Pseudo-OOP                         | Macros            |
-| [Cargo Workspaces](./day1/hour1/workspaces.md)                        | [Lifetimes](./day2/hour2/lifetimes.md)                | Combining Traits                                      | Safety Guarantees |
-| [Hello Library](./day1/hour1/hello_library.md)                        | [RAII - Drop Cleanup](./day2/hour2/raii.md)           | Casting with `any`                                    |                   |
-| [Text Input & Better Unit Testing](./day1/hour1/simple_login_test.md) | [CPU Bound Workload](./day2/hour3/count_primes.md)    | Generic Functions                                     |                   |
-| [Enumerations/Unions](./day1/hour2/enums.md)                          | [Racing Data](./day2/hour3/data_race.md)              | Generic Data Types                                    |                   |
+| **[Day 1](./day1/readme.md)**                                         | **[Day 2](./day2/readme.md)**                         | **Day 3**                                                  | **Day 4**         |
+|-----------------------------------------------------------------------|-------------------------------------------------------|------------------------------------------------------------|-------------------|
+| [Introduction](./day1/hour1/class_intro.md#class-overview)            | [Modules & Visibility](./day2/hour1/modules.md)       | [Type Safety with NewTypes](./day3/hour1/new_types.md)     |                   |
+| [Setup & Update Rust](./day1/hour1/setup_rust.md)                     | [Documentation](./day2/hour1/documentation.md)        | [Basic Traits](./day3/hour1/traits.md)                     | Simple Benchmarks |
+| [Visual Studio Code](./day1/hour1/setup_ide.md)                       | [Error Handling](./day2/hour1/errors.md)              | [Generic Data Types](./day3/hour2/generic_data.md)         | Feature Flags     |
+| [cargo init and "Hello World"](./day1/hour1/hello_world.md)           | [The Borrow Checker](./day2/hour2/borrow_checker.md)  | [Global Variables](./day3/hour1/globals.md)                | Macros            |
+| [Cargo Workspaces](./day1/hour1/workspaces.md)                        | [Lifetimes](./day2/hour2/lifetimes.md)                | [Synchronization Primitives](./day3/hour1/sync.md)         | Safety Guarantees |
+| [Hello Library](./day1/hour1/hello_library.md)                        | [RAII - Drop Cleanup](./day2/hour2/raii.md)           | [Constants & Constant Functions](./day3/hour2/constants.md)|                   |
+| [Text Input & Better Unit Testing](./day1/hour1/simple_login_test.md) | [CPU Bound Workload](./day2/hour3/count_primes.md)    |                                                       |                   |
+| [Enumerations/Unions](./day1/hour2/enums.md)                          | [Racing Data](./day2/hour3/data_race.md)              |                                                       |                   |
 | [Structures](./day1/hour2/structs.md)                                 | [Atomically Counting Primes](./day2/hour3/atomic.md)  |                                                       |                   |
 | [Arrays & Iterators](./day1/hour2/structs.md)                         | [Easy Concurrency with Rayon](./day2/hour3/rayon.md)  |                                                       |                   |
 | [Vectors](./day1/hour3/vectors.md)                                    | [Async with Tokio](./day2/hour4/tokio.md)             |                                                       |                   |

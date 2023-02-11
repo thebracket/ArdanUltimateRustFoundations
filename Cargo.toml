@@ -77,4 +77,8 @@ members = [
     "src/tokio_channels", # For `day2/hour4/channels.md"
     "src/tokio_channels2", # For `day2/hour4/channels.md"
     "src/thread_channels", # For `day2/hour4/channels.md"
+
+    # Day 3, Hour 2
+    "src/generic_data", # For `day3/hour2/generic_data.md"
+    "src/globals", # For `day3/hour1/globals.md"
 ]
