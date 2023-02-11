@@ -81,4 +81,7 @@ members = [
     # Day 3, Hour 2
     "src/generic_data", # For `day3/hour2/generic_data.md"
     "src/globals", # For `day3/hour1/globals.md"
+
+    # Day 4
+    "src/bench", # For `day4/hour1/benchmarks.md`
 ]
