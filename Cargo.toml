@@ -84,4 +84,7 @@ members = [
 
     # Day 4
     "src/bench", # For `day4/hour1/benchmarks.md`
+    "src/flags_lib", # For `day4/hour1/feature_flags.md`
+    "src/flags_exe", # For `day4/hour1/feature_flags.md`
+    "src/macros", # For `day4/hour1/macros.md`
 ]
