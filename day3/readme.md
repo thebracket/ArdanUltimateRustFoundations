@@ -3,7 +3,7 @@
 ## Hour 1
 
 * [Wrapping Types: NewTypes](./hour1/new_types.md)
-* [Traits](./hour1/traits.md)
+* [Basic Traits](./hour1/traits.md)
 
 ## Day 3
 

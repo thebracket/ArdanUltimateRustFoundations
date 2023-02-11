@@ -8,7 +8,7 @@ of each hour.
 | **[Day 1](./day1/readme.md)**                                         | **[Day 2](./day2/readme.md)**                         | **Day 3**                                             | **Day 4**         |
 |-----------------------------------------------------------------------|-------------------------------------------------------|-------------------------------------------------------|-------------------|
 | [Introduction](./day1/hour1/class_intro.md#class-overview)            | [Modules & Visibility](./day2/hour1/modules.md)       | [Type Safety with NewTypes](./day3/hour1/new_types.md)|                   |
-| [Setup & Update Rust](./day1/hour1/setup_rust.md)                     | [Documentation](./day2/hour1/documentation.md)        | New Types and Wrapping Data                           | Simple Benchmarks |
+| [Setup & Update Rust](./day1/hour1/setup_rust.md)                     | [Documentation](./day2/hour1/documentation.md)        | [Basic Traits](./day3/hour1/traits.md)                | Simple Benchmarks |
 | [Visual Studio Code](./day1/hour1/setup_ide.md)                       | [Error Handling](./day2/hour1/errors.md)              | Traits: `From`/`Into`                                 | Feature Flags     |
 | [cargo init and "Hello World"](./day1/hour1/hello_world.md)           | [The Borrow Checker](./day2/hour2/borrow_checker.md)  | Dynamic Traits and Pseudo-OOP                         | Macros            |
 | [Cargo Workspaces](./day1/hour1/workspaces.md)                        | [Lifetimes](./day2/hour2/lifetimes.md)                | Combining Traits                                      | Safety Guarantees |

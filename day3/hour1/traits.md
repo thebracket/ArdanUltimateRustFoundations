@@ -296,3 +296,128 @@ The `dyn` keyword means "the actual type may change" --- its dynamic. That impli
 
 So calling the function now requires an extra step: Rust checks the type at *runtime*, finds the pointer to the implementation of `make_noise` that applies in this case, and runs that function. It's not a big overhead, but it is slowing things down. Fortunately, years of C++ development has made LLVM very smart and fast about optimizing away the `vtable` whenever it can.
 
+## Making Traits Require Other Traits
+
+So you decide that every animal must support `Debug`. You can accomplish this as follows:
+
+```rust
+trait Animal: std::fmt::Debug {
+    fn make_noise(&self) {
+        println!("Who knows what noise I make?")
+    }
+}
+```
+
+We're using the long name because `Debug` *also* refers to a derive option. This works - compiling shows that:
+
+```
+error[E0277]: `Cat` doesn't implement `Debug`
+error[E0277]: `Tortoise` doesn't implement `Debug`
+```
+
+Let's add Debug:
+
+```rust
+#[derive(Debug)]
+struct Cat;
+
+#[derive(Debug)]
+struct Tortoise;
+```
+
+Now we can debug-print the animal in the loop:
+
+```rust
+for animal in animals.iter() {
+    println!("{:?}", animal);
+    animal.make_noise();
+}
+```
+
+This is very powerful, because now you are requiring that anything that implements your interface *must* support other interfaces, as well as your own. Let's add a second requirement:
+
+```rust
+trait Animal: std::fmt::Debug + std::fmt::Display {
+```
+
+So now the implementing types *have* to be printable. You can implement display as follows:
+
+```rust
+impl std::fmt::Display for Cat {
+    fn fmt(&self, f: &mut std::fmt::Formatter) -> std::fmt::Result {
+        write!(f, "Cat")
+    }
+}
+
+impl std::fmt::Display for Tortoise {
+    fn fmt(&self, f: &mut std::fmt::Formatter) -> std::fmt::Result {
+        write!(f, "Tortoise")
+    }
+}
+```
+
+Now you can just print the animal like a primitive:
+
+```rust
+for animal in animals.iter() {
+    println!("{animal}");
+    animal.make_noise();
+}
+```
+
+## What if you REALLY need to know the concrete type?
+
+I emphasize *really*, because this is messy.
+
+Rust provides a type called `Any` that applies to anything. Rust really isn't into inheritance and polymorphism, so don't expect much help.
+
+At the top, import:
+```rust
+use std::any::Any;
+```
+
+Then change your `Animal` trait to require `Any`, and *also* require that recipients implement a function named `as_any`:
+
+```rust
+trait Animal: std::fmt::Debug + std::fmt::Display + Any {
+    fn make_noise(&self) {
+        println!("Who knows what noise I make?")
+    }
+    
+    fn as_any(&self) -> &dyn Any;
+}
+```
+
+Then you have to implement `as_any` for every single implementing type:
+
+```rust
+impl Animal for Cat {
+    fn make_noise(&self) {
+        println!("Meow")
+    }
+    
+    fn as_any(&self) -> &dyn Any {
+        self
+    }
+}
+
+impl Animal for Tortoise {
+    fn as_any(&self) -> &dyn Any {
+        self
+    }
+}
+```
+
+It's the same every time. Finally, in your main loop you can do a runtime check to see if you've received a `Cat`---and "downcast" to use the Cat's native structure type:
+
+```rust
+for animal in animals.iter() {
+    if let Some(cat) = animal.as_any().downcast_ref::<Cat>() {
+        println!("We have access to the cat");
+    }
+    println!("{animal}");
+    animal.make_noise();
+}
+```
+
+Despite being painful, this can be useful. If you have a polymorphic list, and need to access native behavior for a type---this is how you do it. There are crates that help.
