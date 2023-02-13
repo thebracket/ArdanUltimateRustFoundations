@@ -75,10 +75,9 @@ git clone https://github.com/thebracket/ArdanUltimateRustFoundations.git
 **[Day 4](/day4/)**
 
 * Simpler Locks: Parking Lot
-* No locks with DashMap and Lock-Free Types
 * [Simple Benchmarks](./day4/hour1/benchmarks.md)
 * [Putting it together: a TCP login server](./day4/hour1/tcp_login.md)
-* A Simple Web Application
+* [A Simple Web Application](./day4/hour1/rocket.md)
 * REST Services
 * How fast are our network services?
 * Life without the Standard Library

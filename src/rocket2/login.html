@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Please Login</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    </head>
+    <body>
+            <label for="username">Username:</label>
+            <input id="username" />
+            <label for="password">Password:</label>
+            <input type="password" id="password" />
+            <button id="doLogin">Login</button>
+
+            <script>                
+                $("#doLogin").on('click', () => {
+                    let newUser = {
+                        username: $("#username").val(),
+                        password: $("#password").val()
+                    };
+                    console.log(newUser);
+                    $.ajax({
+                        type: "POST",
+                        url: "/api/login",
+                        data: JSON.stringify(newUser),
+                        success: (data) => {
+                            if (data == "ERROR") {
+                                alert("Invalid login")
+                            } else {
+                                window.location.href = "/";
+                            }
+                        }
+                        })
+                })
+            </script>
+    </body>
+</html>
