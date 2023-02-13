@@ -101,7 +101,7 @@ Again, the syntax is the same. Two things to note:
 
 Having just the one user isn't very scalable either, so we'll store a few users in an *array*. Arrays are sequential blocks of *stack* memory (meaning you have limited space available, but it's very fast) that have an *exact* size.
 
-Global variables are deliberately tricky in Rust, so let's make a function that returns a list of users:
+Global variables are deliberately [tricky in Rust](/day3/hour1/globals.md), so let's make a function that returns a list of users:
 
 ```rust
 pub fn get_users() -> [User; 3] {

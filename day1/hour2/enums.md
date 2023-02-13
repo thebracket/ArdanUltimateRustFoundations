@@ -2,7 +2,7 @@
 
 > This session is live coded. The GitHub repo entry is [here](/src/auth_enum/)
 
-You probably want more options than just to say "yes" or "no" to a user. Let's return to the `authentication` workspace member.
+You probably want more options than just to say "yes" or "no" to a user. Let's return to the `authentication` workspace member and open `lib.rs`.
 
 Enumerations should be familiar from other languages. Let's create a simple one for logins:
 
@@ -13,6 +13,8 @@ pub enum LoginAction {
     Denied,
 }
 ```
+
+> If you're used to C, Java or similar this should look very familiar. Just like C, enumerations like this one are also stored numerically and you can cast a value with `as (number)`.
 
 Now we can create a login function with more options:
 
@@ -32,8 +34,8 @@ What's new here?
 * Match statements follow the syntax `(pattern) => expression`.
 * We use `|` to mean `or` in match statements. It's `||` in `if` statements!
 * The `_` means "default".
+* Rust's pattern matching system is *very* powerful and has *many* options. [The Rust Language documentation details more options](https://web.mit.edu/rust-lang_v1.25/arch/amd64_ubuntu1404/share/doc/rust/html/reference/expressions/match-expr.html)
 
-Let's test this:
 
 ```rust
 #[test]
@@ -57,6 +59,17 @@ pub enum LoginAction {
 ```
 
 `#[derive]` can add a lot of implementations to your code automatically. It's even possible to write your own derivations with procedural macros, but that's a more advanced topic than we'll get to today.
+
+> You can expand `derive` macros, too. In this case, it's added some simple code:
+
+```rust
+// Recursive expansion of PartialEq! macro
+// ========================================
+
+impl core::cmp::PartialEq for LoginAction {}
+```
+
+`PartialEq` is a *trait*. Traits are interfaces that describe the capabilities of a type. In this case, you're telling Rust that `LoginAction` can be compared with itself for equality.
 
 With that in place, we can run `cargo test` and our unit test succeeds.
 
@@ -98,6 +111,8 @@ We're using the new `login` function, and performing a `match` on the result. Ju
 
 In a real system, you want to convey more than just a role.
 
+Test this: login as each user in turn.
+
 ## Enumerations with Variables
 
 > This session is live coded. The GitHub repo entry is [here](/src/auth_enum2/)
@@ -124,6 +139,8 @@ pub enum DeniedReason {
 ```
 
 What's this? `reason` is attached to `AccountLocked`. This works because Rust enumerations share a lot in common with `union` types in other languages. You can attach variables to individual entries.
+
+> Enumerations with data are the size of the largest member. A `String` occupies two `usize` variables: the length of the string and a pointer to the string data. Don't go too nuts adding complicated data to `enum` types!
 
 Now let's modify our initial `LoginAction` enum to be a bit more specific:
 
