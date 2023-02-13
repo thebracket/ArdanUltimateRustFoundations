@@ -64,7 +64,7 @@ This shows you what's actually happening under the hood:
 
 1. Create a `Box`. A box is a pointer to the heap. Boxes are *smart* pointers - they will automatically dispose of their contents when they cease to exist. No memory leaks!
 2. Inside the box---in heap memory---your `User` structures are created in an array.
-3. `into_vec` transforms the array into a vector. Since the memory is already on the heap, this is more-or-less instantaneous.
+3. `into_vec` transforms the array into a vector. Since the memory is already on the heap, this is more-or-less instantaneous. Rust is a *move by default* language---so the data is moved, not copied.
 
 Let's take a look at how `Vec` is implemented. In Visual Studio Code, you can click a `Vec` and press `F12` to open its definition. The definition code looks like this:
 

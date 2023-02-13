@@ -17,6 +17,8 @@ That's enough Rust to get you up and running on a lot of projects.
 
 Tomorrow, we're going to talk about:
 
+* Modules & Visibility
+* Documentation
 * Error handling, and dealing with `unwrap`.
 * The borrow checker and lifetimes.
 * RAII - Resource Acquisition is Allocation.

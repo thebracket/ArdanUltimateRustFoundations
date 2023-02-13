@@ -40,7 +40,7 @@ pub fn get_users() -> HashMap<String, User> {
 }
 ```
 
-There's no convenient "insert" macro for `HashMap` (you'll learn how to make one on day 4!). You can manually write an `insert` statement for each entry---it works, but it's cumbersome. Note that we're making a `HashMap`, inserting into it, and then returning. This won't cause any copying, because Rust is *move by default*---you are moving the result out of the function. In most cases, the resulting `memcpy` commands are removed by the compiler for you.
+There's no convenient "insert" macro for `HashMap` ([you'll learn how to make one on day 4!](/day4/hour1/macros.md)). You can manually write an `insert` statement for each entry---it works, but it's cumbersome. Note that we're making a `HashMap`, inserting into it, and then returning. This won't cause any copying, because Rust is *move by default*---you are moving the result out of the function. In most cases, the resulting `memcpy` commands are removed by the compiler for you.
 
 There has to be a better way to transform our vector of users into a `HashMap`, right? We can do it with the `iterator`/`collect` approach. `HashMap` expects to receive data as *tuples* - that is, a collection of variables grouped together. In Rust, a *tuple* looks like this:
 
@@ -73,6 +73,8 @@ let tuples = users
     .collect(); // Collect infers the collection type from the function return
 tuples // Return our created HashMap
 ```
+
+> `map` is half of the "map-reduce" pattern found in so many other languages. Map transforms an incoming data stream into something else. In this case, we take a `User` in, and emit a tuple containins the username and the `user` on the way out.
 
 Unfortunately, that doesn't compile. The error is that you can't construct a `HashMap<String, User>` from `(String, &User)`. The iterator has helpfully *borrowed* each `User` - storing a pointer to the user, rather than the user itself. That's great for fast iteration (and saving memory), but not what we want here. So lets `clone` the user:
 
@@ -294,3 +296,4 @@ HashMap search took 4 usecs
 So `HashMap` is the clear winner for searching data, but not for inserting it.
 
 > Use the right tool for the right job. If you are searching your data heavily, a `HashMap` is a great choice. If you are manipulating data, `Vec` is usually the right choice.
+
