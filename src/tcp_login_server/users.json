@@ -1,0 +1,23 @@
+{
+  "bob": {
+    "username": "bob",
+    "password": "password",
+    "action": {
+      "Accept": "User"
+    }
+  },
+  "herbert": {
+    "username": "herbert",
+    "password": "password",
+    "action": {
+      "Accept": "Admin"
+    }
+  },
+  "toby": {
+    "username": "toby",
+    "password": "password",
+    "action": {
+      "Denied": "PasswordExpired"
+    }
+  }
+}

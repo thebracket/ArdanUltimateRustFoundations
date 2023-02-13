@@ -3,19 +3,18 @@
 
 ## Hour 1
 
+* `parking_lot` for easier locks
+* `DashMap` to avoid locks altogether
 * [Simple Benchmarks](./hour1/benchmarks.md)
-* [Putting it together: a login server]
 
 ## Hour 2
 
+* [Putting it together: a login server](./hour1/tcp_login.md)
 * A Simple Web Application
-* Login as a REST service
 
 ## Hour 3
 
 * How fast are our network services?
-* `parking_lot` for easier locks
-* `DashMap` to avoid locks altogether
 
 ## Hour 4
 
