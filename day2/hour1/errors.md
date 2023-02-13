@@ -247,3 +247,5 @@ fn main() {
 ```
 
 We're explicitly covering every possible error. That's the path to reliable code.
+
+> Discussion: Errors are not exceptions.

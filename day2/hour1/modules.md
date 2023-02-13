@@ -6,6 +6,11 @@ Our `authentication` system is getting pretty messy, and cleaning it up provides
 
 So what is a module? A module is a way of grouping code together. It acts as a namespace. Modules also enforce privacy. You have very tight control over what can be accessed inside a module from the rest of your program. That's helpful for hiding implementation details, keeping users out of the parts you don't want them touching, and presenting a clean API to the outside world.
 
+## Terminology Time
+
+* A `module` is a sub-group of code within a `crate`.
+* A `crate` is a combined unit of code, combining modules together. It's either executable or a library.
+
 There's actually three different ways to build a module in Rust.
 
 ## Module Method 1: Using `mod` blocks

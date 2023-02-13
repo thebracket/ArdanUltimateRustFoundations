@@ -26,6 +26,16 @@ To understand the borrow checker, you need to internalize some rules:
 * Only one thing at a time may *ever* have mutable (write) access to a variable.
 * Any number of things may have *read only* access to a variable---but only if nothing can currently write to it.
 
+This is generally good advice:
+* Keep it simple.
+* Keep a really obvious data-path through which data may be modified.
+
+It also implies:
+* Don't use Rust as an object-oriented language. It isn't one. You won't have much trouble if you combine simple data types and retain a store associating types with types---like a relational database.
+* You *will* have a miserable time if you implement a bunch of functionality-specific traits, mix and match them, and store them in a giant, C++ style common object store. You'll tie yourself in knots trying to match traits, extract the information from *that* trait, and working with lots of borrowed trait data.
+
+---
+
 This is a cornerstone of "fearless concurrency", and eliminates whole classes of bugs:
 
 * You can't use a variable after it's gone (moved or destroyed).
@@ -35,11 +45,40 @@ This is a cornerstone of "fearless concurrency", and eliminates whole classes of
 
 In other words, as painful as it sounds---the borrow checker is there to help you not create potentially disastrous bugs.
 
+It helps to understand one of the key designs of Rust:
+
+* Everything is immutable by default unless you tell Rust otherwise.
+* Making a variable, and then making a *new* variable for the next stage is good practice---functional programming style.
+* Assignments are *move* by default...
+
 ## Understanding Move
 
 Other than some small primitive types (numbers, mostly) that implement the `Copy` trait, Rust *moves variables* by default. This has two implications:
 * The variable no longer exists in its previous state.
 * The recipient now *has ownership* of the variable.
+
+**Why does this matter?**
+
+Take the following C++ program: [https://replit.com/@HerbertWolverso/UseAfterMove#main.cpp](https://replit.com/@HerbertWolverso/UseAfterMove#main.cpp)
+
+```c++
+#include <iostream>
+#include <string>
+
+void do_something(std::string s) {
+  std::cout << s << "\n";
+}
+
+int main() {
+  std::string s("Hello World");  
+  do_something(std::move(s));
+  do_something(std::move(s));
+}
+```
+
+The program compiles and runs just fine. No warnings. But this is strange: we *moved* `s` into the function, and didn't move it back. Why does `s` still work for the second function call? Nobody knows: it's undefined behavior.
+
+Use after free is a form of this, and Rust eliminates it. It's [a really common vulnerability, causing MANY CVEs](https://sensepost.com/blog/2017/linux-heap-exploitation-intro-series-used-and-abused-use-after-free/). It usually manifests are your program chugging along---possibly with corrupt data, a crash---and in some cases can be actively exploited.
 
 > We're live-coding again. The Github (that won't compile!) is [here](/src/borrow_move1/)
 
@@ -273,6 +312,24 @@ fn main() {
 
 The "builder" pattern is really common in Rust---it avoids borrow checker issues. You *move* out of each step, never borrowing. If you never borrow, the borrow checker won't even look at your code!
 
+**Why don't I have this problem in Go/Java/C#/etc.?**
+
+Many higher-level languages with a garbage collector built in prevent this from happening by abstracting variables. Your variable doesn't actually represent your variable itself: it's a pointer to a variable stored in memory. The variable is either reference counted---a number goes up when you access it, or tracked through a generational garbage collector that notices when a variable is no longer used and occasionally cleans things up.
+
+By default, you are passing variables into functions *by reference*: you are creating a *pointer* to the variable, and passing that. You can do the same in Rust with a borrow:
+
+```
+fn do_something(s: &String)
+```
+
+Or for mutability:
+
+```
+fn do_something(s: &mut String)
+```
+
+The Rust approach is *much faster*, but carries a pitfall: you are now responsible for keeping track of this. Coming from languages that don't require you to keep tabs on who owns what can be intimidating. The golden rule still applies: keep it simple. If you are passing variables all over to be changed, that's frequently a code smell---a sign that your design has problems. The difference is that Rust will hit you with the problems up-front, other languages will do their best to shield you from them.
+
 ## Iterators and the Borrow Checker
 
 When I started using Rust, I ran into all kinds of problems combining iterators with data updates.
@@ -322,3 +379,4 @@ for i in 1..nodes.len() {
 
 There's no iterator to borrow anything, so once again you've solved the borrowing problem---by not borrowing.
 
+Think of variables as being like your car. You may be happy to lend it out, but you want to keep close track of who uses it---and be sure that you will get it back (unless it was a gift and you want to *move ownership* of the car to your friend).
