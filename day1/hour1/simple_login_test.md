@@ -1,7 +1,6 @@
 # Extending the Library
 
-> This will be live-coded
-> The GitHub version is [here](/src/auth_if/)
+> This will be live-coded. The GitHub version is [here](/src/auth_if/). You can try it in ReplIt here: [https://replit.com/@HerbertWolverso/SimpleLoginTest#login/src/main.rs](https://replit.com/@HerbertWolverso/SimpleLoginTest#login/src/main.rs)
 
 Just printing someone's name is a great start, but you probably want
 some user input.
@@ -98,3 +97,5 @@ Welcome, herbert
 ```
 
 Notice the strange line breaks? Reading from `stdin` includes `\r\n` (or just `\n` on non-Windows platforms) in your string. Rust dutifuly sends this to the output, causing a break. Just like you did in the login system, `trim()` can remove this.
+
+> If we're running faster than expected, connect the debugger to demonstrate this.

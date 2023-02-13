@@ -7,7 +7,7 @@
 
 ## About the Trainer
 
-Herbert has been developing software professionally for more than 20 years. Starting with Pascal, and then moving onto C and C++, Herbert has developed custom applications ranging from web-server filters to games. Herbert is the author of Hands-on Rust and Rust Brain Teasers.
+Herbert has been developing software professionally for more than 20 years. Starting with BASIC, Pascal, and then moving onto C and C++, Herbert has developed custom applications ranging from web-server filters to games. Herbert is the author of Hands-on Rust and Rust Brain Teasers.
 
 | Book | | Publisher E-Book | Amazon |
 |------|-| -----------------|--------|
@@ -22,7 +22,7 @@ I recommend bookmarking the following resources:
 * [Rust by Example](https://doc.rust-lang.org/rust-by-example/)
 * [Rust Standard Library Documentation](https://doc.rust-lang.org/std/)
 
-The outline for this class is available: TODO URL
+> The outline for this class is available: [https://github.com/thebracket/ArdanUltimateRustFoundations/](https://github.com/thebracket/ArdanUltimateRustFoundations/)
 
 ## Topics We'll Cover
 

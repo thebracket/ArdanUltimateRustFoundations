@@ -16,6 +16,12 @@ You need:
 * An IDE configured to use Rust Analyzer.
     * The instructor will use Visual Studio Code, so if you want to match the examples exactly with what you see, this is the recommended platform. It is [available free](https://code.visualstudio.com/download) for Mac, Windows and Linux.
 
+You should also clone a copy of these notes for yourself:
+
+```
+git clone https://github.com/thebracket/ArdanUltimateRustFoundations.git
+```
+
 ## Class Overview
 
 | **[Day 1](./day1/readme.md)**                                         | **[Day 2](./day2/readme.md)**                         | **Day 3**                                                  | **Day 4**                                             |

@@ -2,7 +2,7 @@
 
 *Million dollar idea: Hello World as a service.*
 
-> This will be live-coded.
+> This will be live-coded. The Github version is [here](/src/hello_auth/). There's a ReplIt version here: [https://replit.com/@HerbertWolverso/HelloAuth#login/src/main.rs](https://replit.com/@HerbertWolverso/HelloAuth#login/src/main.rs)
 
 Now that we have a workspace, let's add a second project to it. This time,
 we're going to create a *library*.
@@ -97,6 +97,8 @@ pub fn add(left: usize, right: usize) -> usize {
 ```
 
 Notice that Clippy complains when I do this. Canonical Rust uses the short form. It's important to know that you *can* use the `return` command---and you can do it anywhere in a function. Early return is often preferred.
+
+> Enabling Clippy as the default in [the IDE setup](./setup_ide.md) makes Clippy bug you as you type. I prefer it this way. Clippy helps you write "Rustacean" code, and knows about a LOT of common things that could be done better. If Clippy is annoying you, you can switch back to `cargo check` mode.
 
 ## Understanding the Tests
 
@@ -269,10 +271,12 @@ Open `Cargo.toml`, and let's add our project as a dependency:
 authentication = { path = "../authentication" }
 ```
 
+> You can specify *version numbers* (e.g. `library = "1"` using semantic versioning. Provide as many significant numbers as you need; "1" will load the latest in the "1.x.y" tree. You can also use `{ git = "git path" }` and load directly from a shared Git repository. Useful if you are working with a team, or want to grab some code from Github.)
+
 We'll update `main.rs` to use our new function:
 
 ```rust
-use hello_as_a_service::greet_user;
+use authentication::greet_user;
 
 fn main() {
     println!("{}", greet_user("Herbert"));

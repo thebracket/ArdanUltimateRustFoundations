@@ -1,8 +1,12 @@
+**This is some basic Visual Studio Code setup. If you're using a different IDE, skip this. The goal is to ensure that students see the same thing as the instructor.**
+
 # Setup your Integrated Development Environment
 
 > While teaching, the instructor will use [Microsoft Visual Studio Code](https://code.visualstudio.com/download). It's free, runs the same on Windows, Mac and Linux, and integrates well with a Rust environment.
 
 ## Extensions You Need
+
+> > You should have Rust Analyzer installed as a pre-requesite. If you don't, let me know and I'll help at the first break.
 
 * [Rust Analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer)
     * Provides everything from syntax highlighting to inline error checking, macro expansion and debugger integration.
@@ -11,6 +15,7 @@
 * [CodeLLDB](https://marketplace.visualstudio.com/items?itemName=vadimcn.vscode-lldb)
     * Integrates well with Rust-Analyzer.
     * Provides inline debugging.
+    * *This is optional for this class, but you probably want it anyway*
 
 ## Extensions You Don't Need - But Probably Want
 

@@ -1,12 +1,24 @@
 # First Program: Hello World
 
-> This section will be demonstrated live. You are encouraged to follow along.
+> This section will be demonstrated live. You are encouraged to follow along. You can see *most* of this online at replit.com: [https://replit.com/@HerbertWolverso/HelloWorld#src/main.rs](https://replit.com/@HerbertWolverso/HelloWorld#src/main.rs)
+
+## Create a new Rust Project
+
+> I find it helpful to have a copy of Visual Studio Code running with this repo, and a *second* window for the code-along examples.
+
+1. Open VSCode.
+2. Select "Open Folder" and load wherever you cloned this GitHub repo.
+    * If you didn't clone it, you can select "Clone Git Repository" and enter `https://github.com/thebracket/ArdanUltimateRustFoundations.git`
+3. Select `File` -> `New Window`.
+4. Open the integrated terminal with `View` -> `Terminal` or `Ctrl` + `backtick`
 
 Let's make a new Rust program with `cargo new`:
 
 1. Change to a new directory. For the demo, I'll be using `C:\users\herbert\rust\live`. Type: `cd rust/live` `<enter>`
 2. Create a new project with `cargo new login_system`.
     * `login_system` is the name of the program to create.
+
+> You can also use `cargo init`. They do the same thing. I've been using Rust since before `new` became the standard, so I may occasionally type `init` without thinking!
 
 You should see:
 
@@ -18,7 +30,8 @@ Let's take a quick tour of everything that has been done. There's some hidden st
 
 ```
 cd login_system
-tree /f
+tree /f 
+    (on Windows), du -h will give a similar display on *NIX.
 ```
 
 There's more here than you might expect:
@@ -103,7 +116,7 @@ There's only a little here to note:
 
 ![](/images/ExpandMacro.png)
 
-Once you run this command, you can find out what `println!` actually does. It's a *lot*:
+Once you run this command, you can find out what `println!` actually does. It's remarkably complicated:
 
 ```rust
 {
@@ -111,8 +124,29 @@ Once you run this command, you can find out what `println!` actually does. It's 
 }
 ```
 
+We'll talk about macros more at the [end of this class](/day4/hour1/macros.md).
+
 ## Run "Hello World"
 
 You can run the newly created program with `cargo run`.
+
+Predictably, you'll see the output:
+
+```
+   Compiling hello_login_system v0.1.0 (C:\Users\Herbert\Documents\Ardan\Rust Foundations 4 Day\src\hello_login_system)
+    Finished dev [unoptimized + debuginfo] target(s) in 1.57s
+     Running `C:\Users\Herbert\Documents\Ardan\Rust Foundations 4 Day\target\debug\hello_login_system.exe`   
+Hello, world!
+```
+
+Since we're here, it's a good time to note that this runs everything in *debug* mode. Optimizations are disabled, extra debug information is generated, and extra run-time error checks are running.
+
+You can always skip these checks and run in optimized mode with:
+
+```
+cargo run --release
+```
+
+(Which gives the same output with a slower compilation and un-noticeably faster execution for such a tiny program)
 
 > You can find the "hello world" example [here](/src/hello_login_system/).

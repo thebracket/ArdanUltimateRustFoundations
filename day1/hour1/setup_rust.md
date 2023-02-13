@@ -1,10 +1,16 @@
 # Setup Your Rust Development Environment
 
+> Hopefully, you've already done some of this.
+
 ## Rust Setup with RustUp
 
 If you haven't already, you need to have Rust installed on your computer.
 Visit (RustUp)[https://rustup.rs/] and install from there. Instructions
 will vary by platform.
+
+![](/images/RustUp.png)
+
+### Things to Know About RustUp
 
 There are some caveats about RustUp that you need to know:
 
@@ -28,9 +34,13 @@ info: The currently active `rustc` version is `rustc 1.65.0 (897e37553 2022-11-0
 
 > *The version numbers will change.*
 
+**If you plan to code along, please take a second to make sure that Rust is installed and working.**
+
 ### Update to the Latest Stable Rust
 
 > This will occur in a live demo.
+
+**Let's take a second to make sure you have an up-to-date Rust install. We're going to use some of the more recent additions to the language, so you don't want to find yourself wondering why something didn't work. In particular, the borrow checker rules have eased up and printing with placeholders has become a lot easier.**
 
 From time to time (I do monthly), it's a good idea to update your Rust setup. Bug fixes and
 performance improvements are applied periodically. Rust won't break *stable* unless a
@@ -138,3 +148,7 @@ Hopefully, you'll see:
 ```
 info: component 'clippy' for target 'x86_64-pc-windows-msvc' is up to date
 ```
+
+>> Everyone doing ok? If you're stuck, let me know before we move on and we'll see if there's an immediate option to help. Otherwise, I'll try and help you at the first break.
+
+>> **Really stuck?** You can use most of this online at [Replit](https://replit.com/~). It won't be as fast as working locally.
