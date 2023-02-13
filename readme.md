@@ -49,7 +49,7 @@ git clone https://github.com/thebracket/ArdanUltimateRustFoundations.git
 * [Error Handling](./day2/hour1/errors.md)
 * [The Borrow Checker](./day2/hour2/borrow_checker.md)
 * [Lifetimes](./day2/hour2/lifetimes.md)
-* [OOP Patterns]
+* [OOP Patterns](/day2/hour2/oop.md)
 * [RAII - Drop Cleanup](./day2/hour2/raii.md)
 * [CPU Bound Workload](./day2/hour3/count_primes.md)
 * [Racing Data](./day2/hour3/data_race.md)

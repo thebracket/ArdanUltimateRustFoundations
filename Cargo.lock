@@ -190,6 +190,21 @@ name = "borrow_move5"
 version = "0.1.0"
 
 [[package]]
+name = "borrow_oops"
+version = "0.1.0"
+
+[[package]]
+name = "borrow_oops2"
+version = "0.1.0"
+
+[[package]]
+name = "borrow_oops3"
+version = "0.1.0"
+dependencies = [
+ "thiserror",
+]
+
+[[package]]
 name = "bytes"
 version = "1.4.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"

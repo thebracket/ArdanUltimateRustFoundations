@@ -58,6 +58,9 @@ members = [
     "src/borrow_move5", # For `day2/hour2/borrow_checker.md`
     "src/borrow_iter",  # For `day2/hour2/borrow_checker.md`
     "src/lifetime_func", # For `day2/hour2/lifetimes.md`
+    "src/borrow_oops", # For `day2/hour2/oop.md`
+    "src/borrow_oops2", # For `day2/hour2/oop.md`
+    "src/borrow_oops3", # For `day2/hour2/oop.md`
     "src/rc_bench", # For `day2/hour2/lifetimes.md`
     "src/file_lock", # For `day2/hour2/raii.md`
 
