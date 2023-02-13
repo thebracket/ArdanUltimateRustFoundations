@@ -3,7 +3,7 @@
 
 ## Hour 1
 
-* `parking_lot` for easier locks
+* [`parking_lot` for easier locks](./hour1/parking_lot.md)
 * [Simple Benchmarks](./hour1/benchmarks.md)
 
 ## Hour 2
@@ -13,7 +13,7 @@
 
 ## Hour 3
 
-* How fast are our network services?
+* [How fast are our network services?](./hour1/netbench.md)
 
 ## Hour 4
 

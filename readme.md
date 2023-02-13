@@ -74,12 +74,11 @@ git clone https://github.com/thebracket/ArdanUltimateRustFoundations.git
 
 **[Day 4](/day4/)**
 
-* Simpler Locks: Parking Lot
+* [Simpler Locks: Parking Lot](./day4/hour1/parking_lot.md)
 * [Simple Benchmarks](./day4/hour1/benchmarks.md)
 * [Putting it together: a TCP login server](./day4/hour1/tcp_login.md)
 * [A Simple Web Application](./day4/hour1/rocket.md)
-* REST Services
-* How fast are our network services?
+* [How fast are our network services?](./day4/hour1/netbench.md)
 * Life without the Standard Library
 * Rust's Safety Guarantees
 * Wrap-Up
