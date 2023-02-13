@@ -67,7 +67,7 @@ git clone https://github.com/thebracket/ArdanUltimateRustFoundations.git
 * [Type Safety with NewTypes](./day3/hour1/new_types.md)
 * [Basic Traits](./day3/hour1/traits.md)
 * [Generic Data Types](./day3/hour2/generic_data.md)
-* [More Complex Generic Data]
+* [More Complex Generic Data](/day3/hour2/generic_complex.md)
 * [Constants & Constant Functions](./day3/hour2/constants.md)
 * [Macros](./day4/hour1/macros.md)
 * [Feature Flags](./day4/hour1/feature_flags.md)

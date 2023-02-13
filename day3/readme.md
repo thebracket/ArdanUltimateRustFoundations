@@ -19,7 +19,7 @@
 ## Hour 3
 
 * [Generic Data](./hour2/generic_data.md)
-* [Complex Generic Data]
+* [Complex Generic Data](./hour2/generic_complex.md)
 
 ## Hour 4
 
