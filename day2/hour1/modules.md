@@ -35,13 +35,13 @@ mod user {
 
 You'll notice that Visual Studio Code has lit up like a Christmas tree with errors!
 
-![](../images/ModuleErrorsVsCode.png)
+![](/images/ModuleErrorsVsCode.png)
 
 That's ok---this is what we're here for, learning how modules work. *Everything* that isn't in the module is now showing up as an error. That's because: **modules don't inherit `use` statements from their parent super-module**. 
 
 Further down in `lib.rs`, you'll see that the rest of the code has developed a number of errors too:
 
-![](../images/ModuleErrors2.png)
+![](/images/ModuleErrors2.png)
 
 These errors are occurring because `User` is no longer in the top-level module. **Modules don't automatically use anything in child modules**.
 

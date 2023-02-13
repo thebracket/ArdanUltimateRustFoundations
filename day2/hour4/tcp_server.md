@@ -83,7 +83,7 @@ socket
 
 Let's run the program with `cargo run` and connect "PuTTY" to `localhost` port `8123`:
 
-![](../images/PuttyEcho.png)
+![](/images/PuttyEcho.png)
 
 Whatever we type gets echoed back to us.
 

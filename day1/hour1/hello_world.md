@@ -101,7 +101,7 @@ There's only a little here to note:
 * `println!` has a mysterious `!`. That denotes it as a *macro*. You'll write macros later in this class. For now, a *macro* is anything that uses the in-built macro language to support syntax that doesn't fit inside regular Rust syntax.
 * Click on `println` and open your "Command Palette". Search for "expand" and find "Expand Macro Recursively" (a Rust Analyzer feature).
 
-![](../images/ExpandMacro.png)
+![](/images/ExpandMacro.png)
 
 Once you run this command, you can find out what `println!` actually does. It's a *lot*:
 

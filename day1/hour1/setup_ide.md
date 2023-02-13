@@ -29,7 +29,7 @@
     * Check "Allow Setting Breakpoints in any file"
         * This helps the debugger work with Rust, even if optimizations have moved your code around.
 
-![](../images/BreakpointsEverywhere.png)
+![](/images/BreakpointsEverywhere.png)
 
 ### Enable Realtime Clippy
     * Open Settings (`ctrl` + `comma`)
@@ -39,4 +39,4 @@
         * Rust has a great linter called "Clippy" built in.
         * This helps reduce errors as you work, and often provides quick refactors into idiomatic Rust.
 
-![](../images/RustAnalyzerClippy.png)
+![](/images/RustAnalyzerClippy.png)

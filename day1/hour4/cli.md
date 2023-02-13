@@ -203,7 +203,7 @@ fn list_users(users: &UserMap) {
 
 Now when you list users, they are color coded:
 
-![](../images/ColoredUsers.png)
+![](/images/ColoredUsers.png)
 
 ## Adding Users
 

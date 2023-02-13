@@ -140,7 +140,7 @@ Size: 20, Capacity: 32
 
 Let's look at that as a graph (going up to 256 elements):
 
-![](../images/VectorGrowth.png)
+![](/images/VectorGrowth.png)
 
 **Every time the vector runs out of capacity, it doubles the capacity**.
 

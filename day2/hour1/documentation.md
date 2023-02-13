@@ -14,7 +14,7 @@ Open up `lib.rs`, and we'll start with a *library header*. At the top, add:
 
 Now open up `main.rs` in `login`. Hover the mouse over `use authentication`, and you can see your module header:
 
-![](../images/ModuleDocs.png)
+![](/images/ModuleDocs.png)
 
 Ideally, you want to document everything that is publicly available. We won't do that today, we'd be here all morning. Let's tell Clippy to fire a warning for everything we *should* document. In `lib.rs`, add the following to the top:
 
@@ -45,7 +45,7 @@ pub fn hash_password(password: &str) -> String {
 
 Notice that we've used markdown. You can even use links if you want to. If you find a usage of `hash_password` and mouse over it, your documentation is now visible:
 
-![](../images/FunctionDocs.png)
+![](/images/FunctionDocs.png)
 
 ## Documentation Examples
 
