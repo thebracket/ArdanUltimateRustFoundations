@@ -54,7 +54,7 @@ git clone https://github.com/thebracket/ArdanUltimateRustFoundations.git
 * [CPU Bound Workload](./day2/hour3/count_primes.md)
 * [Racing Data](./day2/hour3/data_race.md)
 * [Atomically Counting Primes](./day2/hour3/atomic.md)
-* [Shared Data]
+* [Shared Data](./day2/hour3/shared.md)
 
 **[Day 3](/day3/)**
 

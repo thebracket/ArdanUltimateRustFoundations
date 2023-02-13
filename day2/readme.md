@@ -25,5 +25,5 @@
 * [Really Inefficiently Counting Prime Numbers](./hour3/count_primes.md)
 * [Data Race Time](./hour3/data_race.md)
 * [Atomically Counting Primes](./hour3/atomic.md)
-* [Counting Primes with Shared Data]
+* [Counting Primes with Shared Data](./hour3/shared.md)
 * [Day Wrap]
