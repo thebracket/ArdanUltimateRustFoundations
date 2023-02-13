@@ -11,8 +11,8 @@ Herbert has been developing software professionally for more than 20 years. Star
 
 | Book | | Publisher E-Book | Amazon |
 |------|-| -----------------|--------|
-| Hands-on Rust | ![](images/Hands-on%20Rust.png) | [PragProg Page](https://pragprog.com/titles/hwrust/hands-on-rust/) | [Amazon Page](https://www.amazon.com/Hands-Rust-Effective-Learning-Development/dp/1680508164) |
-| Rust Brain Teasers | ![](images/Rust%20Brain%20Teasers.png) | [PragProg Page](https://pragprog.com/titles/hwrustbrain/rust-brain-teasers/) | [Amazon Page](https://www.amazon.com/Rust-Brain-Teasers-Pragmatic-Programmers/dp/1680509179) |
+| Hands-on Rust | ![](/images/Hands-on%20Rust.png) | [PragProg Page](https://pragprog.com/titles/hwrust/hands-on-rust/) | [Amazon Page](https://www.amazon.com/Hands-Rust-Effective-Learning-Development/dp/1680508164) |
+| Rust Brain Teasers | ![](/images/Rust%20Brain%20Teasers.png) | [PragProg Page](https://pragprog.com/titles/hwrustbrain/rust-brain-teasers/) | [Amazon Page](https://www.amazon.com/Rust-Brain-Teasers-Pragmatic-Programmers/dp/1680509179) |
 
 ## Resources
 
