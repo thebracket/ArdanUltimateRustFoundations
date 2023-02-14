@@ -1796,6 +1796,20 @@ dependencies = [
 ]
 
 [[package]]
+name = "tcp_login_server_bench"
+version = "0.1.0"
+dependencies = [
+ "anyhow",
+ "auth_json",
+ "bincode",
+ "once_cell",
+ "parking_lot",
+ "serde",
+ "serde_json",
+ "tokio",
+]
+
+[[package]]
 name = "tempfile"
 version = "3.3.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
