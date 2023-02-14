@@ -80,5 +80,5 @@ git clone https://github.com/thebracket/ArdanUltimateRustFoundations.git
 * [A Simple Web Application](./day4/hour1/rocket.md)
 * [How fast are our network services?](./day4/hour1/netbench.md)
 * [Life without the Standard Library](./day4/hour1/nostd.md)
-* Rust's Safety Guarantees
+* [Rust's Safety Guarantees](./day4/hour1/safety.md)
 * Wrap-Up

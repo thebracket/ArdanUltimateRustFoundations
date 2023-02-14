@@ -18,7 +18,7 @@
 ## Hour 4
 
 * [Life Without the Standard Library](./hour1/nostd.md)
-* Safety Guarantees
+* [Safety Guarantees](./hour1/safety.md)
 * Recap
 * Wrap
 * Other Classes
