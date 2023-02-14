@@ -79,6 +79,6 @@ git clone https://github.com/thebracket/ArdanUltimateRustFoundations.git
 * [Putting it together: a TCP login server](./day4/hour1/tcp_login.md)
 * [A Simple Web Application](./day4/hour1/rocket.md)
 * [How fast are our network services?](./day4/hour1/netbench.md)
-* Life without the Standard Library
+* [Life without the Standard Library](./day4/hour1/nostd.md)
 * Rust's Safety Guarantees
 * Wrap-Up
