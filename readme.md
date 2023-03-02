@@ -75,6 +75,7 @@ git clone https://github.com/thebracket/ArdanUltimateRustFoundations.git
 **[Day 4](/day4/)**
 
 * [Simpler Locks: Parking Lot](./day4/hour1/parking_lot.md)
+* [Avoiding Locks with DashMap](./day4/hour1/dashmap.md)
 * [Simple Benchmarks](./day4/hour1/benchmarks.md)
 * [Complex Benchmarks - A Quick Visit](./day4/hour1/benchmarks2.md)
 * [Putting it together: a TCP login server](./day4/hour1/tcp_login.md)

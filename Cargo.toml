@@ -97,4 +97,5 @@ members = [
     "src/rocket", # For `day4/hour1/rocket.md`
     "src/rocket2", # For `day4/hour1/rocket.md`
     "src/tcp_login_server_bench", # For `day4/hour1/tcp_login.md`
+    "src/dashmap", # For `day4/hour1/dashmap.md`
 ]

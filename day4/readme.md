@@ -5,6 +5,8 @@
 
 * [`parking_lot` for easier locks](./hour1/parking_lot.md)
 * [Simple Benchmarks](./hour1/benchmarks.md)
+* [Complex Benchmarks](./hour1/benchmarks2.md)
+
 
 ## Hour 2
 
@@ -19,6 +21,3 @@
 
 * [Life Without the Standard Library](./hour1/nostd.md)
 * [Safety Guarantees](./hour1/safety.md)
-* Recap
-* Wrap
-* Other Classes
