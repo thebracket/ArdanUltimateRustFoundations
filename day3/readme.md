@@ -7,8 +7,8 @@
 
 ## Hour 2
 
-* [TCP Networking with Tokio](./hour4/tcp_server.md)
-* [Channels](../day3/hour4/channels.md)
+* [TCP Networking with Tokio](../day2/hour4/tcp_server.md)
+* [Channels](../day2/hour4/channels.md)
 * [Global Variables](./hour1/globals.md)
 
 
